@@ -1,0 +1,11 @@
+POST http://localhost:8743/v1/api/course
+Content-Type: application/json
+
+{
+  "teacherId": 1,
+  "studentId": 1,
+  "course": 1,
+  "gradeDescription":"Advanced grade"
+}
+
+###
