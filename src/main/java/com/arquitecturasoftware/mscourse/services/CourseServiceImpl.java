@@ -4,12 +4,16 @@ import com.arquitecturasoftware.mscourse.entities.Course;
 import com.arquitecturasoftware.mscourse.entities.Student;
 import com.arquitecturasoftware.mscourse.repositories.CourseRepository;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;
 
 import javax.persistence.criteria.CriteriaBuilder;
 import java.util.Arrays;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 import java.util.stream.Collectors;
 
 @Service
@@ -34,6 +38,9 @@ public class CourseServiceImpl implements ICourseService{
                 .filter(student -> studentIds.contains(student.getStudentId())).collect(Collectors.toList());
         return studentsInCourse;
     }
+
+
+
 
 
 }
