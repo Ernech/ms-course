@@ -1,5 +1,5 @@
 server:
-  port: ${SERVER_PORT:8743}
+  port: ${SERVER_PORT:8744}
 spring:
   application:
     name: ms-course
